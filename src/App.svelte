@@ -1,24 +1,24 @@
 <template lang="pug">
   Router
-    Navigation
+    Navbar
     main
       Route(path="/")
         Home
-      Route(path="contact")
-        Contact
       Route(path="news")
         News
+      Route(path="about")
+        About
+      Route(path="contact")
+        Contact
 </template>
 
-<style lang="sass">
-</style>
-
 <script>
-  import Navigation from './components/Navigation.svelte';
+  import Navbar from './components/Navbar.svelte';
 
   import Contact from './pages/Contact.svelte';
   import Home from './pages/Home.svelte';
   import News from './pages/News.svelte';
+  import About from './pages/About.svelte';
 
   import { Router, Route } from "svelte-navigator";
 

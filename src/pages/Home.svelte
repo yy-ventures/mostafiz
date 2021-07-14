@@ -10,7 +10,7 @@
           //- |
           //- span.speciality / The Denim Expert
 
-  section
+  section#expertise
     .grid.four
       a(href="#")
         .container: img(src="images/optimized/create.jpg")
