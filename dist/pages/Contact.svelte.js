@@ -22,7 +22,7 @@ function create_fragment(ctx) {
 			div = element("div");
 			div.innerHTML = `<h1 class="contact svelte-c4esta">Contact</h1><h5 class="email svelte-c4esta">muddin@mostafiz.org</h5><h5 class="website svelte-c4esta">www.mostafiz.org</h5>`;
 			attr(img, "class", "contact_background svelte-c4esta");
-			if (img.src !== (img_src_value = "/images/optimized/contact.jpg")) attr(img, "src", img_src_value);
+			if (img.src !== (img_src_value = "images/optimized/contact.jpg")) attr(img, "src", img_src_value);
 			attr(div, "class", "contact_content svelte-c4esta");
 		},
 		m(target, anchor) {
