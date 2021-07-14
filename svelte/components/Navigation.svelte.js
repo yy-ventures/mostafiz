@@ -15,9 +15,9 @@ import {
 	text,
 	transition_in,
 	transition_out
-} from "../../_snowpack/pkg/svelte/internal.js";
+} from "../_snowpack/pkg/svelte/internal.js";
 
-import { Link } from "../../_snowpack/pkg/svelte-navigator.js";
+import { Link } from "../_snowpack/pkg/svelte-navigator.js";
 
 function create_default_slot_5(ctx) {
 	let img;

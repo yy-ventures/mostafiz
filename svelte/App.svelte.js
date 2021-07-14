@@ -11,12 +11,12 @@ import {
 	safe_not_equal,
 	transition_in,
 	transition_out
-} from "../_snowpack/pkg/svelte/internal.js";
+} from "./_snowpack/pkg/svelte/internal.js";
 
 import Navigation from "./components/Navigation.svelte.js";
 import Contact from "./pages/Contact.svelte.js";
 import Home from "./pages/Home.svelte.js";
-import { Router, Route } from "../_snowpack/pkg/svelte-navigator.js";
+import { Router, Route } from "./_snowpack/pkg/svelte-navigator.js";
 import "./styles/resets.css.proxy.js";
 import "./styles/globals.css.proxy.js";
 
