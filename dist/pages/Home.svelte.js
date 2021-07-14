@@ -17,7 +17,7 @@ function create_fragment(ctx) {
 	return {
 		c() {
 			div3 = element("div");
-			div3.innerHTML = `<div class="avatar"><img src="/images/optimized/avatar.jpg" class="svelte-1j0emdm"/></div><div class="summary svelte-1j0emdm"><img src="/images/optimized/summary.jpg" class="svelte-1j0emdm"/><div class="content svelte-1j0emdm"><h5 class="svelte-1j0emdm">Denim is my true passion. From the early days in the industry, till today, I do emphasize on bringing my part to denim at all levels. I boldly invest time into denim-fabric, design, development and washing, enabling my team and clients to take advantage of this. Let me take you through a presentation of my denim-universe.</h5><h3 class="svelte-1j0emdm">MOSTAFIZ UDDIN</h3></div></div>`;
+			div3.innerHTML = `<div class="avatar"><img src="images/optimized/avatar.jpg" class="svelte-1j0emdm"/></div><div class="summary svelte-1j0emdm"><img src="images/optimized/summary.jpg" class="svelte-1j0emdm"/><div class="content svelte-1j0emdm"><h5 class="svelte-1j0emdm">Denim is my true passion. From the early days in the industry, till today, I do emphasize on bringing my part to denim at all levels. I boldly invest time into denim-fabric, design, development and washing, enabling my team and clients to take advantage of this. Let me take you through a presentation of my denim-universe.</h5><h3 class="svelte-1j0emdm">MOSTAFIZ UDDIN</h3></div></div>`;
 			attr(div3, "class", "home_header svelte-1j0emdm");
 		},
 		m(target, anchor) {
