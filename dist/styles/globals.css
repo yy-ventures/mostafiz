@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins");
+html,
+body {
+  font-family: sans-serif;
+  font-size: 14px;
+}
+@media (min-width: 601px) {
+  html,
+body {
+    font-size: clamp(16px, 1vw, 1vw);
+  }
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+body {
+  overflow-x: hidden;
+  background: #2d3e86;
+}
+
+h1, h2, h3 {
+  color: #fff;
+}
+
+p,
+a {
+  color: #eee;
+}
