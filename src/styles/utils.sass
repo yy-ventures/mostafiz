@@ -1,0 +1,44 @@
+@import 'variables'
+
+// grid{{{
+.grid
+  display: grid
+  grid-gap: 2.5em
+  // @media (min-width: 601px)
+  //   grid-auto-flow: column
+
+  &.two
+    @media (min-width: 601px)
+      grid-template-columns: 1fr 1fr
+  &.three
+    @media (min-width: 601px)
+      grid-template-columns: repeat(3, 1fr)
+  &.four
+    @media (min-width: 601px)
+      grid-template-columns: repeat(4, 1fr)
+// }}}
+// center{{{
+.center
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+// }}}
+
+.overlay
+  position: relative
+  z-index: 1
+  &:after
+    content: ''
+    position: absolute
+    inset: 0
+    background: rgba($blue, 0.25)
+    z-index: -1
+
+.background
+  position: absolute
+  top: 0
+  z-index: -1
+  height: 100%
+  width: 100%
+  object-fit: cover

@@ -1,7 +1,7 @@
 export default {
   mount: {
     public: '/',
-    src: '/dist',
+    src: '/',
   },
   plugins: [
     '@snowpack/plugin-svelte',
@@ -18,11 +18,11 @@ export default {
     /* ... */
   },
   devOptions: {
-    baseUrl: '/mostafiz/',
+    baseUrl: './',
     out: "dist",
   },
   buildOptions: {
-    baseUrl: '/mostafiz/',
+    baseUrl: './',
     out: "dist",
   },
 };

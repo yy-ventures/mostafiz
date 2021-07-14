@@ -10,7 +10,6 @@
     width: 100%
     height: 80vh
     object-fit: cover
-    margin-bottom: 5em
 
   .contact_content
     position: absolute
@@ -27,4 +26,5 @@
     h5
       font-size: 1.5em
       margin: 0
+      color: black
 </style>

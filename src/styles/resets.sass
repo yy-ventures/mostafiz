@@ -26,11 +26,6 @@ body
 // a
 //   display: block
 
-section
-  padding: 2.5em
-  @media (min-width: 601px)
-    padding: 5em
-
 a
   text-decoration: none
   display: block
@@ -63,11 +58,12 @@ textarea,
 select
   font: inherit
 
-h1,
-h2,
-h3,
-p
-  max-width: 80ch
+// h1,
+// h2,
+// h3,
+// p
+//   max-width: 80ch
+
 // }}}
 
 // [hidden]
@@ -147,3 +143,6 @@ iframe
 textarea
   resize: none
   width: 100%
+
+p + p
+  margin-top: 1em
