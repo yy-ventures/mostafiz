@@ -22,6 +22,7 @@ function create_fragment(ctx) {
 			section = element("section");
 			section.innerHTML = `<div class="grid four svelte-1bvjlhm"><a href="#"><div class="container"><img src="images/optimized/create.jpg"/></div><p class="svelte-1bvjlhm">CREATE</p></a><a href="#"><div class="container"><img src="images/optimized/connect.jpg"/></div><p class="svelte-1bvjlhm">CONNECT</p></a><a href="#"><div class="container"><img src="images/optimized/educate.jpg"/></div><p class="svelte-1bvjlhm">EDUCATE</p></a><a href="#"><div class="container"><img src="images/optimized/transmit.jpg"/></div><p class="svelte-1bvjlhm">TRANSMIT</p></a></div><article class="svelte-1bvjlhm"><p class="svelte-1bvjlhm">My endless passion for denim has pushed me to develop several channels which are feeding one each other.</p><p class="svelte-1bvjlhm">Production know-how, Technology savvy mindset doubled with ethical development vision, market intelligence and idustry network !</p><p class="svelte-1bvjlhm">Mostafiz Uddin</p></article><img class="background svelte-1bvjlhm" src="images/optimized/home_background.jpg"/>`;
 			attr(header, "class", "grid svelte-1bvjlhm");
+			attr(section, "id", "expertise");
 			attr(section, "class", "svelte-1bvjlhm");
 		},
 		m(target, anchor) {

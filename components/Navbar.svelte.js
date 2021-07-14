@@ -41,7 +41,7 @@ function create_default_slot_5(ctx) {
 	};
 }
 
-// (1:232) <Link to="#">
+// (1:232) <Link to="/">
 function create_default_slot_4(ctx) {
 	let t;
 
@@ -150,7 +150,7 @@ function create_fragment(ctx) {
 
 	link1 = new Link({
 			props: {
-				to: "#",
+				to: "/",
 				$$slots: { default: [create_default_slot_4] },
 				$$scope: { ctx }
 			}
