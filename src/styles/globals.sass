@@ -1,0 +1,26 @@
+@import 'variables'
+
+html,
+body
+  font-family: $font_sans
+  font-size: 14px
+  @media (min-width: 601px)
+    font-size: clamp(16px, 1vw, 1vw)
+
+h1
+  font-size: 3rem
+h2
+  font-size: 2rem
+h3
+  font-size: 1.5rem
+
+body
+  overflow-x: hidden
+  background: $blue
+
+h1, h2, h3
+  color: $fg_light_title
+
+p,
+a
+  color: $fg_light_text

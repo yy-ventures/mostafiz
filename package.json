@@ -1,10 +1,15 @@
 {
   "scripts": {
-    "start": "snowpack dev",
-    "build": "snowpack build",
-    "test": "echo \"This template does not include a test runner by default.\" && exit 1"
+    "dev": "snowpack dev",
+    "build": "snowpack build"
   },
   "devDependencies": {
-    "snowpack": "^3.3.7"
+    "@snowpack/plugin-sass": "^1.4.0",
+    "@snowpack/plugin-svelte": "^3.7.0",
+    "pug": "^3.0.2",
+    "sass": "^1.35.2",
+    "snowpack": "^3.3.7",
+    "svelte": "^3.38.3",
+    "svelte-navigator": "^3.1.5"
   }
 }
