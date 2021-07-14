@@ -29,7 +29,7 @@ function create_default_slot_5(ctx) {
 			img = element("img");
 			h3 = element("h3");
 			h3.textContent = "THE DENIM EXPERT";
-			if (img.src !== (img_src_value = "/images/logo.png")) attr(img, "src", img_src_value);
+			if (img.src !== (img_src_value = "images/logo.png")) attr(img, "src", img_src_value);
 			attr(img, "class", "svelte-10mcdzl");
 			attr(h3, "class", "svelte-10mcdzl");
 		},
@@ -44,7 +44,7 @@ function create_default_slot_5(ctx) {
 	};
 }
 
-// (1:233) <Link to="#">
+// (1:232) <Link to="#">
 function create_default_slot_4(ctx) {
 	let t;
 
@@ -61,7 +61,7 @@ function create_default_slot_4(ctx) {
 	};
 }
 
-// (1:262) <Link to="#">
+// (1:261) <Link to="#">
 function create_default_slot_3(ctx) {
 	let t;
 
@@ -78,7 +78,7 @@ function create_default_slot_3(ctx) {
 	};
 }
 
-// (1:296) <Link to="#">
+// (1:295) <Link to="#">
 function create_default_slot_2(ctx) {
 	let t;
 
@@ -95,7 +95,7 @@ function create_default_slot_2(ctx) {
 	};
 }
 
-// (1:320) <Link to="#">
+// (1:319) <Link to="#">
 function create_default_slot_1(ctx) {
 	let t;
 
@@ -112,7 +112,7 @@ function create_default_slot_1(ctx) {
 	};
 }
 
-// (1:345) <Link to="contact">
+// (1:344) <Link to="contact">
 function create_default_slot(ctx) {
 	let t;
 
