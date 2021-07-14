@@ -7,16 +7,16 @@ body {
 @media (min-width: 601px) {
   html,
 body {
-    font-size: clamp(16px, 1vw, 1vw);
+    font-size: 18px;
   }
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 h3 {
@@ -26,13 +26,15 @@ h3 {
 body {
   overflow-x: hidden;
   background: #2d3e86;
+  padding-bottom: 2.5em;
 }
 
-h1, h2, h3 {
-  color: #fff;
-}
-
+h1,
+h2,
+h3,
+h4,
+h5,
 p,
 a {
-  color: #eee;
+  color: white;
 }

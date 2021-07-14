@@ -20,10 +20,10 @@ function create_fragment(ctx) {
 		c() {
 			img = element("img");
 			div = element("div");
-			div.innerHTML = `<h1 class="contact svelte-c4esta">Contact</h1><h5 class="email svelte-c4esta">muddin@mostafiz.org</h5><h5 class="website svelte-c4esta">www.mostafiz.org</h5>`;
-			attr(img, "class", "contact_background svelte-c4esta");
+			div.innerHTML = `<h1 class="contact svelte-10eg5zd">Contact</h1><h5 class="email svelte-10eg5zd">muddin@mostafiz.org</h5><h5 class="website svelte-10eg5zd">www.mostafiz.org</h5>`;
+			attr(img, "class", "contact_background svelte-10eg5zd");
 			if (img.src !== (img_src_value = "images/optimized/contact.jpg")) attr(img, "src", img_src_value);
-			attr(div, "class", "contact_content svelte-c4esta");
+			attr(div, "class", "contact_content svelte-10eg5zd");
 		},
 		m(target, anchor) {
 			insert(target, img, anchor);

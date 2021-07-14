@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins");
+.grid {
+  display: grid;
+  grid-gap: 2.5em;
+}
+@media (min-width: 601px) {
+  .grid.two {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 601px) {
+  .grid.three {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 601px) {
+  .grid.four {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay {
+  position: relative;
+  z-index: 1;
+}
+.overlay:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(45, 62, 134, 0.25);
+  z-index: -1;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}

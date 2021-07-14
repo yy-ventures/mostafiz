@@ -13,21 +13,27 @@ import {
 
 function create_fragment(ctx) {
 	let header;
+	let section;
 
 	return {
 		c() {
 			header = element("header");
-			header.innerHTML = `<div class="avatar"><img src="images/optimized/avatar.jpg" class="svelte-8ub2mz"/></div><div class="summary svelte-8ub2mz"><img src="images/optimized/summary.jpg" class="svelte-8ub2mz"/><article class="svelte-8ub2mz"><h5 class="svelte-8ub2mz">Denim is my true passion. From the early days in the industry, till today, I do emphasize on bringing my part to denim at all levels. I boldly invest time into denim-fabric, design, development and washing, enabling my team and clients to take advantage of this. Let me take you through a presentation of my denim-universe.</h5><h3 class="svelte-8ub2mz">MOSTAFIZ UDDIN</h3></article></div>`;
-			attr(header, "class", "svelte-8ub2mz");
+			header.innerHTML = `<img src="images/optimized/avatar.jpg" class="svelte-1bvjlhm"/><article class="center svelte-1bvjlhm"><img src="images/optimized/summary.jpg" class="svelte-1bvjlhm"/><div class="texts"><h5 class="svelte-1bvjlhm">Denim is my true passion. From the early days in the industry, till today, I do emphasize on bringing my part to denim at all levels. I boldly invest time into denim-fabric, design, development and washing, enabling my team and clients to take advantage of this. Let me take you through a presentation of my denim-universe.</h5><h3 class="svelte-1bvjlhm">MOSTAFIZ UDDIN</h3></div></article>`;
+			section = element("section");
+			section.innerHTML = `<div class="grid four svelte-1bvjlhm"><a href="#"><div class="container"><img src="images/optimized/create.jpg"/></div><p class="svelte-1bvjlhm">CREATE</p></a><a href="#"><div class="container"><img src="images/optimized/connect.jpg"/></div><p class="svelte-1bvjlhm">CONNECT</p></a><a href="#"><div class="container"><img src="images/optimized/educate.jpg"/></div><p class="svelte-1bvjlhm">EDUCATE</p></a><a href="#"><div class="container"><img src="images/optimized/transmit.jpg"/></div><p class="svelte-1bvjlhm">TRANSMIT</p></a></div><article class="svelte-1bvjlhm"><p class="svelte-1bvjlhm">My endless passion for denim has pushed me to develop several channels which are feeding one each other.</p><p class="svelte-1bvjlhm">Production know-how, Technology savvy mindset doubled with ethical development vision, market intelligence and idustry network !</p><p class="svelte-1bvjlhm">Mostafiz Uddin</p></article><img class="background svelte-1bvjlhm" src="images/optimized/home_background.jpg"/>`;
+			attr(header, "class", "grid svelte-1bvjlhm");
+			attr(section, "class", "svelte-1bvjlhm");
 		},
 		m(target, anchor) {
 			insert(target, header, anchor);
+			insert(target, section, anchor);
 		},
 		p: noop,
 		i: noop,
 		o: noop,
 		d(detaching) {
 			if (detaching) detach(header);
+			if (detaching) detach(section);
 		}
 	};
 }

@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins");
+nav {
+  transition: transform 500ms ease-in-out;
+  background: rgba(238, 238, 238, 0.95);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 99;
+  padding: 0 2.5em;
+  flex-direction: column;
+}
+nav a {
+  transition: color 0.5s;
+}
+nav a:last-child {
+  transition: background 0.5s;
+}
+nav a {
+  color: grey;
+}
+nav a:hover, nav a:active {
+  color: black;
+}
+nav a {
+  font-weight: 600;
+}
+nav input {
+  display: none;
+}
+@media (min-width: 601px) {
+  nav {
+    position: sticky;
+  }
+}
+@media (min-width: 601px) {
+  nav {
+    flex-direction: row;
+  }
+}
+@media (max-width: 600px) {
+  nav {
+    min-height: 4em;
+  }
+}
+nav img {
+  width: 8em;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -25%);
+}
+@media (min-width: 601px) {
+  nav img {
+    width: 7em;
+    left: 0;
+    transform: translate(25%, -25%);
+  }
+}
+nav h3 {
+  color: #222;
+  margin-left: 5em;
+  display: none;
+  letter-spacing: 0.25ch;
+}
+@media (min-width: 601px) {
+  nav h3 {
+    display: block;
+  }
+}
+nav .menu {
+  overflow: hidden;
+  transition: max-height 500ms;
+  text-align: center;
+  max-height: 0;
+}
+@media (min-width: 601px) {
+  nav .menu {
+    max-height: 100%;
+  }
+}
+@media (min-width: 601px) {
+  nav .menu {
+    display: flex;
+  }
+}
+@media (min-width: 601px) {
+  nav .menu * + * {
+    margin-left: 1em;
+  }
+}
+nav .menu a {
+  margin-top: 1em;
+}
+@media (min-width: 601px) {
+  nav .menu a {
+    margin-top: 0;
+  }
+}
+nav .menu a:first-child {
+  margin-top: 7em;
+}
+@media (min-width: 601px) {
+  nav .menu a:first-child {
+    margin-top: 0;
+  }
+}
+nav .menu .socials a + a {
+  margin-left: 0.5em;
+}
+nav #toggler:checked ~ .menu {
+  max-height: 600px;
+}
+nav #toggler:checked ~ label #menu_button #bar {
+  background: none;
+  margin-top: 7px;
+}
+nav #toggler:checked ~ label #menu_button #bar:before, nav #toggler:checked ~ label #menu_button #bar:after {
+  top: 0;
+}
+nav #toggler:checked ~ label #menu_button #bar:before {
+  transform: rotate(45deg);
+}
+nav #toggler:checked ~ label #menu_button #bar:after {
+  transform: rotate(-45deg);
+}
+@media (min-width: 601px) {
+  nav #menu_toggler_label {
+    display: none;
+  }
+}
+nav #menu_toggler_label #menu_button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 99;
+  cursor: pointer;
+  padding: 5px 10px;
+  padding-bottom: 20px;
+}
+@media (min-width: 601px) {
+  nav #menu_toggler_label #menu_button {
+    display: none;
+  }
+}
+nav #menu_toggler_label #menu_button #bar {
+  position: relative;
+  transition: background 500ms;
+}
+nav #menu_toggler_label #menu_button #bar, nav #menu_toggler_label #menu_button #bar:after, nav #menu_toggler_label #menu_button #bar:before {
+  width: 30px;
+  height: 3px;
+  background: #333;
+  border-radius: 50px;
+}
+nav #menu_toggler_label #menu_button #bar:after, nav #menu_toggler_label #menu_button #bar:before {
+  content: "";
+  display: block;
+  position: absolute;
+  transition: transform 500ms;
+}
+nav #menu_toggler_label #menu_button #bar:before {
+  top: 7px;
+}
+nav #menu_toggler_label #menu_button #bar:after {
+  top: 15px;
+}
