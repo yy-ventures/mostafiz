@@ -13,16 +13,14 @@ p {
 }
 
 body {
-  min-height: 100vh;
-  scroll-padding-top: 100px;
   scroll-behavior: smooth;
+  scroll-padding-top: 5em;
   line-sizing: normal;
   text-rendering: optimizeSpeed;
   line-height: 1.6;
   min-width: 100vw;
   min-height: 100vh;
   overflow-x: hidden;
-  font-size: 16px;
 }
 
 a {

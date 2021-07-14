@@ -13,17 +13,18 @@ import {
 	transition_out
 } from "./_snowpack/pkg/svelte/internal.js";
 
-import Navigation from "./components/Navigation.svelte.js";
+import Navbar from "./components/Navbar.svelte.js";
 import Contact from "./pages/Contact.svelte.js";
 import Home from "./pages/Home.svelte.js";
 import News from "./pages/News.svelte.js";
+import About from "./pages/About.svelte.js";
 import { Router, Route } from "./_snowpack/pkg/svelte-navigator.js";
 import "./styles/resets.css.proxy.js";
 import "./styles/globals.css.proxy.js";
 import "./styles/navigation.css.proxy.js";
 import "./styles/utils.css.proxy.js";
 
-function create_default_slot_3(ctx) {
+function create_default_slot_4(ctx) {
 	let home;
 	let current;
 	home = new Home({});
@@ -51,37 +52,8 @@ function create_default_slot_3(ctx) {
 	};
 }
 
-// (1:76) <Route path="contact">
-function create_default_slot_2(ctx) {
-	let contact;
-	let current;
-	contact = new Contact({});
-
-	return {
-		c() {
-			create_component(contact.$$.fragment);
-		},
-		m(target, anchor) {
-			mount_component(contact, target, anchor);
-			current = true;
-		},
-		i(local) {
-			if (current) return;
-			transition_in(contact.$$.fragment, local);
-			current = true;
-		},
-		o(local) {
-			transition_out(contact.$$.fragment, local);
-			current = false;
-		},
-		d(detaching) {
-			destroy_component(contact, detaching);
-		}
-	};
-}
-
-// (1:125) <Route path="news">
-function create_default_slot_1(ctx) {
+// (1:68) <Route path="news">
+function create_default_slot_3(ctx) {
 	let news;
 	let current;
 	news = new News({});
@@ -109,35 +81,102 @@ function create_default_slot_1(ctx) {
 	};
 }
 
+// (1:108) <Route path="about">
+function create_default_slot_2(ctx) {
+	let about;
+	let current;
+	about = new About({});
+
+	return {
+		c() {
+			create_component(about.$$.fragment);
+		},
+		m(target, anchor) {
+			mount_component(about, target, anchor);
+			current = true;
+		},
+		i(local) {
+			if (current) return;
+			transition_in(about.$$.fragment, local);
+			current = true;
+		},
+		o(local) {
+			transition_out(about.$$.fragment, local);
+			current = false;
+		},
+		d(detaching) {
+			destroy_component(about, detaching);
+		}
+	};
+}
+
+// (1:151) <Route path="contact">
+function create_default_slot_1(ctx) {
+	let contact;
+	let current;
+	contact = new Contact({});
+
+	return {
+		c() {
+			create_component(contact.$$.fragment);
+		},
+		m(target, anchor) {
+			mount_component(contact, target, anchor);
+			current = true;
+		},
+		i(local) {
+			if (current) return;
+			transition_in(contact.$$.fragment, local);
+			current = true;
+		},
+		o(local) {
+			transition_out(contact.$$.fragment, local);
+			current = false;
+		},
+		d(detaching) {
+			destroy_component(contact, detaching);
+		}
+	};
+}
+
 // (1:0) <Router>
 function create_default_slot(ctx) {
-	let navigation;
+	let navbar;
 	let main;
 	let route0;
 	let route1;
 	let route2;
+	let route3;
 	let current;
-	navigation = new Navigation({});
+	navbar = new Navbar({});
 
 	route0 = new Route({
 			props: {
 				path: "/",
-				$$slots: { default: [create_default_slot_3] },
+				$$slots: { default: [create_default_slot_4] },
 				$$scope: { ctx }
 			}
 		});
 
 	route1 = new Route({
 			props: {
-				path: "contact",
-				$$slots: { default: [create_default_slot_2] },
+				path: "news",
+				$$slots: { default: [create_default_slot_3] },
 				$$scope: { ctx }
 			}
 		});
 
 	route2 = new Route({
 			props: {
-				path: "news",
+				path: "about",
+				$$slots: { default: [create_default_slot_2] },
+				$$scope: { ctx }
+			}
+		});
+
+	route3 = new Route({
+			props: {
+				path: "contact",
 				$$slots: { default: [create_default_slot_1] },
 				$$scope: { ctx }
 			}
@@ -145,18 +184,20 @@ function create_default_slot(ctx) {
 
 	return {
 		c() {
-			create_component(navigation.$$.fragment);
+			create_component(navbar.$$.fragment);
 			main = element("main");
 			create_component(route0.$$.fragment);
 			create_component(route1.$$.fragment);
 			create_component(route2.$$.fragment);
+			create_component(route3.$$.fragment);
 		},
 		m(target, anchor) {
-			mount_component(navigation, target, anchor);
+			mount_component(navbar, target, anchor);
 			insert(target, main, anchor);
 			mount_component(route0, main, null);
 			mount_component(route1, main, null);
 			mount_component(route2, main, null);
+			mount_component(route3, main, null);
 			current = true;
 		},
 		p(ctx, dirty) {
@@ -181,28 +222,38 @@ function create_default_slot(ctx) {
 			}
 
 			route2.$set(route2_changes);
+			const route3_changes = {};
+
+			if (dirty & /*$$scope*/ 1) {
+				route3_changes.$$scope = { dirty, ctx };
+			}
+
+			route3.$set(route3_changes);
 		},
 		i(local) {
 			if (current) return;
-			transition_in(navigation.$$.fragment, local);
+			transition_in(navbar.$$.fragment, local);
 			transition_in(route0.$$.fragment, local);
 			transition_in(route1.$$.fragment, local);
 			transition_in(route2.$$.fragment, local);
+			transition_in(route3.$$.fragment, local);
 			current = true;
 		},
 		o(local) {
-			transition_out(navigation.$$.fragment, local);
+			transition_out(navbar.$$.fragment, local);
 			transition_out(route0.$$.fragment, local);
 			transition_out(route1.$$.fragment, local);
 			transition_out(route2.$$.fragment, local);
+			transition_out(route3.$$.fragment, local);
 			current = false;
 		},
 		d(detaching) {
-			destroy_component(navigation, detaching);
+			destroy_component(navbar, detaching);
 			if (detaching) detach(main);
 			destroy_component(route0);
 			destroy_component(route1);
 			destroy_component(route2);
+			destroy_component(route3);
 		}
 	};
 }
