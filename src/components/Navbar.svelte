@@ -10,7 +10,7 @@
         h3 THE DENIM EXPERT
       .menu
         Link(to="/") EXPERTISE
-        Link(to="#") SUSTAINABILITY
+        Link(to="sustainability") SUSTAINABILITY
         Link(to="news") NEWS
         Link(to="about") ABOUT
         Link(to="contact") CONTACT

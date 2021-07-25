@@ -1,5 +1,5 @@
 <template lang="pug">
-  header.grid
+  header.grid.overlay
     img(src="images/optimized/avatar.jpg")
     article.center
       img(src="images/optimized/summary.jpg")
@@ -82,7 +82,7 @@
         left: 0
         width: 100%
         height: 100%
-        background: rgba($blue, 0.25)
+        /* background: rgba($blue, 0.25) */
         z-index: -1
 
 
@@ -106,13 +106,18 @@
       p
         text-align: center
         font-size: 1.5em
-        
 
     article
       background: rgba(lightgrey, .15)
-      width: 75%
+      width: 95%
+      @media (min-width: 601px)
+        width: 75%
+        
       margin: 0 auto
-      padding: 2.5em
+      padding: 1em
+      @media (min-width: 601px)
+        padding: 2.5em
+        
       text-align: center
     
 </style>

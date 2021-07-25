@@ -1,7 +1,7 @@
 <script>
   const content = [
-    'A selfless promoter of Bangladesh’s apparel industry, with an innate desire to change the game.',
-    'Mr. Mostafiz Uddin is a visionary in the area of the sustainable apparel ecosystem in Bangladesh through his philosophy which evolved from his passion for social and environmental ethics. He is believed to be a game changer in the industry through the promotion of innovation and fashion disruption, which he sees as key to the future success of the Bangladesh apparel sector. He is a selfless promoter of the critical issues surrounding sustainable apparel which include responsible business, technology, innovation, circularity and transparency.',
+    'Today, sustainability, and managerial responsibility, have become the driving keywords for Mostafiz Uddin.',
+    'From security to water treatment, his factory is a state of the art Building, where plants grow, and fishes live in the water which is leaving the factory.',
     "\"I was born in the southern Bangladesh district of Chattogram (Chittagong), into a middle-class family. In many considerations, my childhood was just ordinary, except for the support from and relationship with my Mom. She was the one who inspired me to be ‘myself' and 'listen to my heart'. When other kids were being protected from the outside world, my mother encouraged me to go out and experience the world first-hand.",
     'I joined the Bangladesh scouts at the age of 11, where I quickly became a group Leader. This leadership role drove me to later form a cricket team which entered into the district cricket tournament. In 1991 I actively worked with Operation Sea Angel, the US-led, military disaster relief programme, in the aftermath of the cyclone which had devastated the southern coast of Bangladesh that year.',
     'Right after completing my Higher Secondary School in 1995, my father Mr. Moslem Uddin (who was my role model) passed away following a heart attack, leaving me, as I was the eldest son, as head of my family. After completion of my HSC I gained admittance to the University of Madras in India. Having secured my degree I returned home in 1999 and I met a USA citizen who requested that I join him in his endeavour to help the Bangladesh Ready-Made-Garment sector.',
@@ -15,42 +15,45 @@
 
 <template lang="pug">
 
-  h1 ABOUT
+  h1 SUSTAINABILITY
 
   header.center.overlay
     h2.underline {content[0]}
-    img.background(src="images/optimized/about_header.jpg")
+    img.background(src="images/sustainability_header.png")
 
   section.center.overlay
-    img.background(src="images/optimized/about_background.jpg")
+    img.background(src="images/sustainability_background.png")
 
     article.grid.two
-      p {content[1]} 
-      img(src="images/optimized/about_1.jpg")
+      article
+        h3.underline His factory copes with the higher standards of sustainability.
+        p {content[1]} 
+      img(src="images/sustainability_1.png")
 
+    article.grid.two
       article
-        img(src="images/optimized/about_2.jpg")
-        p {content[2]}
-        p {content[3]}
+        img(src="images/sustainability_2.png")
+        h3.underline His factory has all the modern sustainability certificates a denim factory should have.
       article
-        p {content[4]}
-        p {content[5]}
-        img(src="images/optimized/about_3.jpg")
+        h3.underline Special care is given to all workers and managers,
+        p and numerous projects and initiatives create that special mood, where the entire team feels the collective responsibility Mostafiz is protecting his team with
 
     article.grid.two
       aside
         img(src="images/optimized/about_4.jpg")
-        img(src="images/optimized/about_4.jpg")
       article
-        p {content[6]}
-        p {content[7]}
-        p {content[8]}
-        p {content[9]}
+        h3.underline Mostafiz Uddin works personally on all latest denim developments,
+        p which are based on recycled material and cradle-to-cradle projects. These developments can be of great benefit for his clients
 
 </template>
 
 <style lang="sass">
   @import '../styles/variables'
+
+  article
+    .underline
+      &:after
+        margin: 0 0 0 auto
 
   h1
     text-align: center

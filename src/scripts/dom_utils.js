@@ -1,14 +1,14 @@
-// dom{{{
+// doms{{{
 //==============================================================================
 //                              Select Dom
 //==============================================================================
-const doms = (selector) => document.querySelectorAll(selector);
+export const doms = (selector) => document.querySelectorAll(selector);
 /*}}}*/
 // observer dom{{{
 //==============================================================================
 //                              Observer Dom
 //==============================================================================
-const observer_dom = (
+export const observer_dom = (
   dom,
   action_is_intersecting,
   action_not_intersecting
@@ -30,7 +30,7 @@ const observer_dom = (
 //==============================================================================
 //                              Toggle Class on Focus
 //==============================================================================
-const toggle_class_on_focus = (list) => {
+export const toggle_class_on_focus = (list) => {
   for (const key in list) {
     list[key].forEach((dom_string) => {
       doms(dom_string).forEach(d => {
@@ -48,7 +48,7 @@ const toggle_class_on_focus = (list) => {
 //==============================================================================
 //                              Add Class on Focus
 //==============================================================================
-const add_class_on_focus = (list) => {
+export const add_class_on_focus = (list) => {
   for (const key in list) {
     list[key].forEach((dom_string) => {
       doms(dom_string).forEach(d => {
@@ -70,7 +70,7 @@ export const toggle_navigation_on_scroll = () => {
   window.addEventListener('scroll', () => {
     if (window.scrollY > window.position_old) {
       if (!window.nav_hidden) {
-        doms('nav')[0].style.transform = 'translateY(-100%)';
+        doms('nav')[0].style.transform = 'translateY(-200%)';
         window.nav_hidden = true;
       }
     } else if (window.nav_hidden) {
@@ -85,7 +85,7 @@ export const toggle_navigation_on_scroll = () => {
 //==============================================================================
 //                              Update Scroll
 //==============================================================================
-const update_scroll = () => {
+export const update_scroll = () => {
   window.addEventListener('scroll', () => {
     document.body.style.setProperty(
       '--scroll',
@@ -94,11 +94,8 @@ const update_scroll = () => {
   });
 };
 /*}}}*/
-
-const get_checked_values = (elements) => Object.values(elements).filter(box => box.checked).map(dom => dom.value)
-const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
-
-const submitter = (form_id, action) => {
+// submitter{{{
+export const form_submitter = (form_id, action) => {
   try {
     doms(form_id)[0].onsubmit = async (event) => {
       event.preventDefault()
@@ -115,3 +112,7 @@ const submitter = (form_id, action) => {
   } catch (error) {
   }
 }
+//}}}
+
+export const get_checked_values = (elements) => Object.values(elements).filter(box => box.checked).map(dom => dom.value)
+export const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));

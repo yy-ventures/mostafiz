@@ -1,16 +1,10 @@
 export default {
   mount: {
-    public: '/',
+    public: { url: '/', static: true, resolve: false },
     src: '/',
   },
-  plugins: [
-    '@snowpack/plugin-svelte',
-    '@snowpack/plugin-sass',
-  ],
-  routes: [
-    /* Enable an SPA Fallback in development: */
-    // {"match": "routes", "src": ".*", "dest": "/index.html"},
-  ],
+  plugins: ['@snowpack/plugin-svelte', '@snowpack/plugin-sass'],
+  routes: [{ match: 'routes', src: '.*', dest: '/index.html' }],
   optimize: {
     // "bundle": true,
   },
@@ -18,11 +12,11 @@ export default {
     /* ... */
   },
   devOptions: {
-    baseUrl: './',
-    out: "dist",
+    open: 'none',
+    out: 'dist',
+    port: 1111,
   },
   buildOptions: {
-    baseUrl: './',
-    out: "dist",
+    out: 'dist',
   },
 };
