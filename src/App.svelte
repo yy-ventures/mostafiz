@@ -1,12 +1,14 @@
 <script>
   import Navbar from "./components/Navbar.svelte";
 
+  import Connect from "./pages/Connect.svelte";
   import Contact from "./pages/Contact.svelte";
   import Home from "./pages/Home.svelte";
   import News from "./pages/News.svelte";
   import About from "./pages/About.svelte";
   import Create from "./pages/Create.svelte";
   import Educate from "./pages/Educate.svelte";
+  import Transmit from "./pages/Transmit.svelte";
   import Sustainability from "./pages/Sustainability.svelte";
 
   import { Router, Route } from "svelte-navigator";
@@ -37,4 +39,8 @@
         Create
       Route(path="educate")
         Educate
+      Route(path="transmit")
+        Transmit
+      Route(path="connect")
+        Connect
 </template>

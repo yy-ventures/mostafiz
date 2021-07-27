@@ -12,16 +12,16 @@
 
   section#expertise
     .grid.four
-      a(href="#")
+      a(href="create")
         .container: img(src="images/optimized/create.jpg")
         p CREATE
-      a(href="#")
+      a(href="connect")
         .container: img(src="images/optimized/connect.jpg")
         p CONNECT
-      a(href="#")
+      a(href="educate")
         .container: img(src="images/optimized/educate.jpg")
         p EDUCATE
-      a(href="#")
+      a(href="transmit")
         .container: img(src="images/optimized/transmit.jpg")
         p TRANSMIT
 
@@ -33,6 +33,7 @@
     img.background(src="images/optimized/home_background.jpg")   
 
 </template>
+
 <style lang="sass">
   @import '../styles/variables'
 
@@ -119,5 +120,5 @@
         padding: 2.5em
         
       text-align: center
-    
+
 </style>
