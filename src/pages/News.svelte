@@ -1,3 +1,4 @@
+
 <template lang="pug">
   #news.overlay
     img.background(src="images/optimized/news_background.jpg")
@@ -42,5 +43,5 @@
       padding: 1em
       @media (min-width: 601px)
         padding: 5em
-  
+
 </style>

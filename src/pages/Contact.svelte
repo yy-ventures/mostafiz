@@ -1,30 +1,33 @@
+<script>
+  import Title from "../components/Title.svelte";
+  import Background from "../components/Background.svelte";
+</script>
+
 <template lang="pug">
-  img.contact_background(src="images/optimized/contact.jpg")
-  .contact_content
-    h1.contact Contact
-    h5.email muddin@mostafiz.org
-    h5.website www.mostafiz.org
+  Background(image="contact")
+    .container
+      h1 contact
+      h5 mostafiz@denimexpert.com
+      h5 www.denimmostafiz.com
 </template>
+
 <style lang="sass">
-  .contact_background
-    width: 100%
-    height: 80vh
-    object-fit: cover
-
-  .contact_content
-    position: absolute
-    top: 15%
-    left: 50%
-    transform: translateX(-50%)
-
-    text-align: center
-
-    h1
-      letter-spacing: 0.25ch
-      margin-bottom: 1em
-
+  .container
+    height: 60vh
+    
+    h1,
     h5
-      font-size: 1.5em
-      margin: 0
+      text-align: center
+    
+    h1
+      text-transform: uppercase
+      font-family: 'Porter-BoldDEMO'
+      letter-spacing: 0.5rem
+      margin-bottom: 10rem
+    h5
       color: black
+      font-family: Lora
+      font-size: 2rem
+      line-height: 0
+      letter-spacing: 0.25rem
 </style>

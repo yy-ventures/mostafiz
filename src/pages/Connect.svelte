@@ -1,3 +1,5 @@
+
+
 <script>
   import Hero from "../components/Hero.svelte";
   import Featured from "../components/CreateFeatured.svelte";

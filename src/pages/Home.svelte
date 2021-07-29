@@ -4,7 +4,7 @@
     article.center
       img(src="images/optimized/summary.jpg")
       .texts
-        h5 Denim is my true passion. From the early days in the industry, till today, I do emphasize on bringing my part to denim at all levels. I boldly invest time into denim-fabric, design, development and washing, enabling my team and clients to take advantage of this. Let me take you through a presentation of my denim-universe.
+        p Denim is my true passion. From the early days in the industry, till today, I do emphasize on bringing my part to denim at all levels. I boldly invest time into denim-fabric, design, development and washing, enabling my team and clients to take advantage of this. Let me take you through a presentation of my denim-universe.
         h3
           | MOSTAFIZ UDDIN
           //- |
@@ -14,16 +14,16 @@
     .grid.four
       a(href="create")
         .container: img(src="images/optimized/create.jpg")
-        p CREATE
+        h3 CREATE
       a(href="connect")
         .container: img(src="images/optimized/connect.jpg")
-        p CONNECT
+        h3 CONNECT
       a(href="educate")
         .container: img(src="images/optimized/educate.jpg")
-        p EDUCATE
+        h3 EDUCATE
       a(href="transmit")
         .container: img(src="images/optimized/transmit.jpg")
-        p TRANSMIT
+        h3 TRANSMIT
 
     article
       p My endless passion for denim has pushed me to develop several channels which are feeding one each other.
@@ -62,8 +62,11 @@
         top: 0
         z-index: -1
 
-      h5
-        font-size: 1rem
+      p
+        font-family: Lora
+        letter-spacing: 0.20rem
+        font-weight: bold
+        font-size: 1.25rem
 
       h3
         margin-top: 1em
@@ -104,9 +107,10 @@
       @media (min-width: 601px)
         padding: 2.5em
 
-      p
+      h3
         text-align: center
-        font-size: 1.5em
+        font-size: 2em
+        font-family: 'Porter-BoldDEMO'
 
     article
       background: rgba(lightgrey, .15)
@@ -120,5 +124,17 @@
         padding: 2.5em
         
       text-align: center
+
+      p
+        font-family: Lora
+        letter-spacing: 0.20rem
+        font-size: 1.25rem
+        text-align: center !important
+
+      p + p
+        margin: 0
+
+      p:last-of-type
+        margin-top: 2.5em
 
 </style>

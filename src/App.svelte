@@ -10,12 +10,17 @@
   import Educate from "./pages/Educate.svelte";
   import Transmit from "./pages/Transmit.svelte";
   import Sustainability from "./pages/Sustainability.svelte";
+  import DenimStudio from "./pages/DenimStudio.svelte";
+  import DesignConcepts from "./pages/DesignConcepts.svelte";
+  import FabricInnovation from "./pages/FabricInnovation.svelte";
+  import FabricSourcing from "./pages/FabricSourcing.svelte";
+  import TrainingNDevelopment from "./pages/TrainingNDevelopment.svelte";
+  import WetProcessing from "./pages/WetProcessing.svelte";
 
   import { Router, Route } from "svelte-navigator";
 
   import "./styles/resets.sass";
   import "./styles/globals.sass";
-  import "./styles/navigation.sass";
   import "./styles/utils.sass";
 
   import "./scripts/main.js";
@@ -43,4 +48,16 @@
         Transmit
       Route(path="connect")
         Connect
+      Route(path="denim-studio")
+        DenimStudio
+      Route(path="design-concepts")
+        DesignConcepts
+      Route(path="fabric-innovation")
+        FabricInnovation
+      Route(path="fabric-sourcing")
+        FabricSourcing
+      Route(path="training-n-development")
+        TrainingNDevelopment
+      Route(path="wet-processing")
+        WetProcessing
 </template>
