@@ -1,3 +1,7 @@
+<script>
+  import { Link } from "svelte-navigator";
+</script>
+
 <template lang="pug">
   nav
     input#toggler(type="checkbox")
@@ -9,11 +13,11 @@
       img(src="images/logo.png")
       h3 THE DENIM EXPERT
     .menu
-      a(href="/") EXPERTISE
-      a(href="sustainability") SUSTAINABILITY
-      a(href="news") NEWS
-      a(href="about") ABOUT
-      a(href="contact") CONTACT
+      Link(to="/") EXPERTISE
+      Link(to="#") SUSTAINABILITY
+      Link(to="news") NEWS
+      Link(to="about") ABOUT
+      Link(to="contact") CONTACT
       .socials
           a(class="fab fa-instagram" href="#" target="_blank" rel="noopener noreferrer")
           a(class="fab fa-linkedin-in" href="#" target="_blank" rel="noopener noreferrer")
