@@ -1,16 +1,29 @@
 <script>
-  import Hero from "../components/Hero.svelte";
+  import Title from "../components/Title.svelte";
+  import Background from "../components/Background.svelte";
+
   import PostHeader from "../components/CreatePostHeader.svelte";
   import Featured from "../components/CreateFeatured.svelte";
-
-  const data_hero = {
-    background: "create_header",
-    title: "create",
-  };
 </script>
 
 <template lang="pug">
-  Hero({...data_hero})
-  PostHeader
-  Featured
+  #create
+    Background(image="create_header")
+      Title.title(content="create")
+    PostHeader
+    Featured
 </template>
+
+<style lang="sass">
+  @import '../styles/variables'
+
+  #create
+    :global
+      > .container:first-of-type
+        &:after
+          background: none
+        .content
+          height: 90vh
+          h1
+            font-size: 7rem
+</style>

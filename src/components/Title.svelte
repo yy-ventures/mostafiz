@@ -8,8 +8,11 @@
 
 <style lang="sass">
   h1
-    text-align: center
-    text-transform: uppercase
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    height: 100%
     font-family: 'Porter-BoldDEMO'
     letter-spacing: 0.5rem
     line-height: 2.5
